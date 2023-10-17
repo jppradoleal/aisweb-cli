@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "aisweb-cli"
+version = "0.1.0"
+description = ""
+authors = ["João Pedro Prado <joaopedro0128@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+selenium = "^4.14.0"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+redis = "^5.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+aisweb = "aisweb_cli.main:search_icao"

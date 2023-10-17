@@ -1,0 +1,2 @@
+class ResultUnreachableException(Exception):
+  pass
